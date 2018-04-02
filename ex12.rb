@@ -1,0 +1,21 @@
+# Exercise 12: Prompting People for Numbers
+
+print "Give me a number: "
+number = gets.chomp.to_i
+
+bigger = number * 100
+puts "A bigger number is #{bigger}."
+
+print "Give me another number: "
+another = gets.chomp
+number = another.to_f
+
+smaller = number / 100
+puts "A smaller number is #{smaller}."
+
+# Practicing with to_f to give 10% back of original money
+print "Give me some money: "
+money = gets.chomp.to_f
+give_back = (money * 0.10).round(2)
+
+puts "I'm giving you 10%\ back: #{give_back}"
